@@ -1,0 +1,21 @@
+{% if array_sneakers|length %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for array_sneaker in array_sneakers %}
+                <tr>
+                    {% for key, value in array_sneaker %}
+                        <td>{{ value }}</td>     
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No sneakerss</p>
+{% endif %}

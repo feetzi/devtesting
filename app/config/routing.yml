@@ -1,0 +1,13 @@
+api:
+    resource: '.'
+    type: 'api_platform'
+    
+sneaker_list_all:
+    path: '/list_all_sneakers'
+    methods:  ['GET']
+    defaults:
+        _controller: 'AppBundle:Sneaker:listAll'
+
+app:
+    resource: '@AppBundle/Action/'
+    type: 'annotation'
